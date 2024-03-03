@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. pipeline'
-                sh 'cat /etc/hosts'
+                echo 'Build'
+                sh 'whoami'
             }
         }
         stage('Test') {
