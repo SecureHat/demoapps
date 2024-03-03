@@ -5,19 +5,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building.. pipeline'
-                echo 'built changes'
+                sh 'cat /etc/hosts'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'whoami'
+                sh 'date'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'date'
+                sh 'pwd'
             }
         }
     }
