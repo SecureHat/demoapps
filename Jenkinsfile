@@ -11,13 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'date'
+                sh 'whoami'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo 'deployed'
+                sh 'date'
             }
         }
     }
